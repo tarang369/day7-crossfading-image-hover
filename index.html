@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 7: Crossfading Image Hover Effect</title>
+    <style type="text/css">
+      #main {
+        position: relative;
+        height: 280px;
+        width: 450px;
+        margin: auto;
+      }
+      #main img {
+        position: absolute;
+        left: 0;
+        transition: 1s all;
+      }
+      #main .top:hover {
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <img
+        src="https://source.unsplash.com/random/600x600?sig=2"
+        class="bottom"
+      />
+      <img src="https://source.unsplash.com/random/600x600?sig=1" class="top" />
+    </div>
+  </body>
+</html>
